@@ -1,0 +1,47 @@
+
+
+# Frontend ignore
+
+# compiled output
+twitter-frontend/dist
+twitter-frontend/dist-server
+twitter-frontend/tmp
+twitter-frontend/out-tsc
+
+# dependencies
+twitter-frontend/node_modules
+
+# IDEs and editors
+twitter-frontend/.idea
+
+# IDE - VSCode
+twitter-frontend/.vscode/*
+
+# misc
+twitter-frontend/.sass-cache
+twitter-frontend/connect.lock
+twitter-frontend/coverage
+twitter-frontend/libpeerconnection.log
+twitter-frontend/npm-debug.log
+twitter-frontend/testem.log
+twitter-frontend/typings
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
+
+
+# Backend ignore
+twitter-backend/target/
+twitter-backend/!.mvn/wrapper/maven-wrapper.jar
+
+### IntelliJ IDEA ###
+twitter-backend/.idea
+twitter-backend/*.iws
+twitter-backend/*.iml
+twitter-backend/*.ipr
+
