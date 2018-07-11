@@ -1,4 +1,4 @@
-export class Post{
+export class Post {
   postContent: string;
   postTime: Date;
 }

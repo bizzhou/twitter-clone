@@ -30,5 +30,10 @@
 }
 
 .content-card {
-  margin: 2% 0% 2% 0%;
+  margin: 2% 0 2% 0;
+}
+
+#post-content {
+  word-break: break-all;
+  white-space: normal;
 }

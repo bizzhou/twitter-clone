@@ -15,10 +15,8 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-
     /**
      * Login function to check if email and password match with record in DB
-     *
      * @param email: user's login email
      * @param password: user's login password
      * @return user found in the database

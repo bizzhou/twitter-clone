@@ -1,6 +1,5 @@
 import {CdkTableModule} from '@angular/cdk/table';
 import {NgModule} from '@angular/core';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {
   MatAutocompleteModule,
   MatButtonModule,

@@ -28,34 +28,66 @@ public class User {
     public User() {
     }
 
+    /**
+     * Get the user's id
+     * @return Long
+     */
     public Long getUserId() {
         return userId;
     }
 
+    /**
+     * Set the user's id
+     * @param userId Long
+     */
     public void setUserId(Long userId) {
         this.userId = userId;
     }
 
+    /**
+     * Get the user's email
+     * @return String
+     */
     public String getEmail() {
         return email;
     }
 
+    /**
+     * Set user's email
+     * @param email String
+     */
     public void setEmail(String email) {
         this.email = email;
     }
 
+    /**
+     * Get user's password
+     * @return String
+     */
     public String getPassword() {
         return password;
     }
 
+    /**
+     * Set user's password
+     * @param password String
+     */
     public void setPassword(String password) {
         this.password = password;
     }
 
+    /**
+     * Get all of user's posts
+     * @return List
+     */
     public List<Post> getPosts() {
         return posts;
     }
 
+    /**
+     * Set user's post
+     * @param posts List
+     */
     public void setPosts(List<Post> posts) {
         this.posts = posts;
     }

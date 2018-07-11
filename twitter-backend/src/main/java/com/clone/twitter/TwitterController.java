@@ -27,7 +27,6 @@ public class TwitterController {
 
     /**
      * Forwards the login request to service layer
-     *
      * @param email: user's login email
      * @param password: user's login password
      * @return user in JSON format
@@ -41,7 +40,6 @@ public class TwitterController {
 
     /**
      * Forward the post request to service layer
-     *
      * @param post: post content
      * @param userId: user's id
      * @return post in JSON format
@@ -55,7 +53,6 @@ public class TwitterController {
 
     /**
      * Forwards the get all posts request to service layer
-     *
      * @param id: user's id
      * @return list of posts in JSON format
      */

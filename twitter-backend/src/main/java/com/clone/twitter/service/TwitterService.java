@@ -24,7 +24,6 @@ public class TwitterService {
 
     /**
      * Post the message on the message board
-     *
      * @param userId
      * @param postContent
      * @return saved Post
@@ -44,7 +43,6 @@ public class TwitterService {
 
     /**
      * Get all post after user login
-     *
      * @return List of saved posts
      */
     public List<Post> getAllPosts(Long userId) {

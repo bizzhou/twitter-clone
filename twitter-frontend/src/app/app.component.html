@@ -1,26 +1,25 @@
 <mat-toolbar color='primary'>
+
   <mat-toolbar-row>
+
     <span>Message Board</span>
     <span class="example-spacer"></span>
 
     <div *ngIf="!isLoggedIn()">
-
-
       <button mat-button (click)="openLoginDialog()">
         <mat-icon>person
         </mat-icon>
       </button>
     </div>
 
-
     <div *ngIf="isLoggedIn()">
       <button mat-button (click)="openLoginDialog()">
-        <p>Logout</p>
+        Logout
       </button>
     </div>
 
-
   </mat-toolbar-row>
+
 </mat-toolbar>
 
 
@@ -34,23 +33,18 @@
     </mat-form-field>
 
     <button id="post-button" type="submit" mat-raised-button>Post</button>
+
   </form>
 
 
   <div class='twitter-content'>
-
-
     <mat-card class="content-card" *ngFor="let post of posts">
       <mat-card-content>
-        <p>{{post.postContent}}</p>
-
+        <p id="post-content">{{post.postContent }}</p>
         <p>{{post.postTime | date: 'medium'}}</p>
       </mat-card-content>
-
     </mat-card>
-
   </div>
-
 
 </div>
 
