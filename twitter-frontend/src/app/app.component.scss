@@ -1,0 +1,33 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  @mixin md-icon-size($size: 24px) {
+    font-size: $size;
+    height: $size;
+    width: $size;
+  }
+  
+  .mat-icon {
+    @include md-icon-size(32px);
+  }
+
+.main-content{
+    width: 70%;
+    margin-left:15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+#post-form {
+    text-align: left;
+    width: 100%;
+}
+
+#post-button {
+    
+    margin-top: 2%;
+    margin-bottom: 4%;
+    
+}

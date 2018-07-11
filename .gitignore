@@ -45,3 +45,5 @@ twitter-backend/*.iws
 twitter-backend/*.iml
 twitter-backend/*.ipr
 
+
+twitter-frontend/package-lock\.json
