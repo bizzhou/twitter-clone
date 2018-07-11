@@ -2,43 +2,56 @@
   <mat-toolbar-row>
     <span>Message Board</span>
     <span class="example-spacer"></span>
-    <mat-icon class="md-36" (click)="openLoginDialog()">person</mat-icon>
+
+    <div *ngIf="!isLoggedIn()">
+
+
+      <button mat-button (click)="openLoginDialog()">
+        <mat-icon>person
+        </mat-icon>
+      </button>
+    </div>
+
+
+    <div *ngIf="isLoggedIn()">
+      <button mat-button (click)="openLoginDialog()">
+        <p>Logout</p>
+      </button>
+    </div>
+
+
   </mat-toolbar-row>
 </mat-toolbar>
 
 
 <div class='main-content'>
-    <form class="content-form">
 
-        <mat-form-field id='post-form'>
-          <input matInput #message maxlength="140" placeholder="Message">
-          <mat-hint align="end">{{message.value.length}} / 140</mat-hint>
-        </mat-form-field>
-      
-      </form>
-        
-      <button id="post-button" mat-raised-button>Post</button>
-    
-      <div class='twitter-content'>
-          <mat-card class="content-card">
-    
-              <mat-card-header>
-                  <mat-card-title>Shiba Inu said:</mat-card-title>
-                </mat-card-header>
-            
-            <mat-card-content>
-              <p>
-                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                bred for hunting.
-              </p>
-            </mat-card-content>
-            
-          </mat-card>
-      </div>
+  <form class="content-form" (submit)="tweet(message.value); message.value='';">
+
+    <mat-form-field id='post-form'>
+      <input matInput #message maxlength="140" placeholder="Message">
+      <mat-hint align="end">{{message.value.length}} / 140</mat-hint>
+    </mat-form-field>
+
+    <button id="post-button" type="submit" mat-raised-button>Post</button>
+  </form>
 
 
-   
+  <div class='twitter-content'>
+
+
+    <mat-card class="content-card" *ngFor="let post of posts">
+      <mat-card-content>
+        <p>{{post.postContent}}</p>
+
+        <p>{{post.postTime | date: 'medium'}}</p>
+      </mat-card-content>
+
+    </mat-card>
+
+  </div>
+
+
 </div>
 
 
