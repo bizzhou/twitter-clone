@@ -6,9 +6,9 @@
 - Backend: Spring Boot, Java 8, Hibernate
 - Database: MySQL
 
-[[https://github.com/bizzhou/twitter-clone/blob/master/home.png|alt=home]]
+![Image of Home](https://raw.githubusercontent.com/bizzhou/twitter-clone/master/home.png)
 
-[[https://github.com/bizzhou/twitter-clone/blob/master/login.png|alt=home]]
+![Image of Home](https://raw.githubusercontent.com/bizzhou/twitter-clone/master/login.png)
 
 ### How to run the project
 - I have already pre-compiled the javascript files, they are located in **twitter-backend/src/main/java/com.clone.twitter/resources/public**.
