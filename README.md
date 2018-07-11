@@ -21,4 +21,10 @@
 ```
 run the following command in terminal for import into Intellij Idea and run.
 $ mvn spring-boot:run
+
+login username: bin@gmail.com
+login password: 12345
+
 ```
+
+[[https://github.com/username/repository/blob/master/img/octocat.png|alt=octocat]]
