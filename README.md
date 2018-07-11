@@ -6,6 +6,10 @@
 - Backend: Spring Boot, Java 8, Hibernate
 - Database: MySQL
 
+[[https://github.com/bizzhou/twitter-clone/blob/master/home.png|alt=home]]
+
+[[https://github.com/bizzhou/twitter-clone/blob/master/login.png|alt=home]]
+
 ### How to run the project
 - I have already pre-compiled the javascript files, they are located in **twitter-backend/src/main/java/com.clone.twitter/resources/public**.
 - Angular frontend file are located in twitter-frontend/src/app. The **app.component.ts** is the main typescript file that contains logics, and the **app.component.html** is the main html file.
@@ -27,4 +31,4 @@ login password: 12345
 
 ```
 
-[[https://github.com/username/repository/blob/master/img/octocat.png|alt=octocat]]
+
